@@ -193,16 +193,26 @@
             letter-spacing: 1px;
             position: relative;
             border-bottom: 1px solid #333333;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
 
-        .card-image::before {
-            content: '';
+        .card-image-overlay {
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+            background: rgba(0, 0, 0, 0.6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.3rem;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         .card-content {
@@ -503,61 +513,137 @@
             </div>
 
             <div class="opportunities-grid" id="opportunities">
-                <div class="opportunity-card" onclick="openModal('annual-gala')">
-                    <div class="card-image">
-                        Annual Gala Event
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title">Annual Gala Evening</h3>
-                        <p class="card-description">Our premier networking event bringing together industry leaders, professionals, and community members for an evening of celebration and connection.</p>
-                        <div class="card-details">
-                            <span class="sponsorship-level premium">Premium</span>
-                            <span class="investment-range">$5K - $25K</span>
+                <div class="opportunity-card" onclick="openModal('mid-week-mastermind')">
+                    <div class="card-image" style="background-image: url('MV Pod pic.png');">
+                        <div class="card-image-overlay">
+                            Mid-Week Mastermind
                         </div>
-                        <button class="cta-button">Learn More</button>
-                    </div>
-                </div>
-
-                <div class="opportunity-card" onclick="openModal('quarterly-workshop')">
-                    <div class="card-image">
-                        Quarterly Workshops
                     </div>
                     <div class="card-content">
-                        <h3 class="card-title">Professional Development Series</h3>
-                        <p class="card-description">Four seasonal workshops focused on skill development, industry trends, and professional growth opportunities for our community.</p>
+                        <h3 class="card-title">Mid-Week Mastermind Sponsor</h3>
+                        <p class="card-description">Weekly professional development sessions focused on real estate strategies, market insights, and skill-building workshops for our agents.</p>
                         <div class="card-details">
                             <span class="sponsorship-level gold">Gold</span>
-                            <span class="investment-range">$2K - $10K</span>
+                            <span class="investment-range">From $1,000.00</span>
                         </div>
                         <button class="cta-button">Learn More</button>
                     </div>
                 </div>
 
-                <div class="opportunity-card" onclick="openModal('networking-mixer')">
-                    <div class="card-image">
-                        Monthly Mixers
+                <div class="opportunity-card" onclick="openModal('monthly-sales-meeting')">
+                    <div class="card-image" style="background-image: url('MV Pod pic.png');">
+                        <div class="card-image-overlay">
+                            Monthly Sales Meeting
+                        </div>
                     </div>
                     <div class="card-content">
-                        <h3 class="card-title">Monthly Networking Mixers</h3>
-                        <p class="card-description">Casual monthly gatherings designed to foster connections, share ideas, and build lasting professional relationships in a relaxed atmosphere.</p>
+                        <h3 class="card-title">Monthly Sales Meeting Sponsor</h3>
+                        <p class="card-description">Monthly gatherings where agents share market updates, celebrate achievements, and connect with vendor partners.</p>
                         <div class="card-details">
                             <span class="sponsorship-level silver">Silver</span>
-                            <span class="investment-range">$500 - $2K</span>
+                            <span class="investment-range">From $1,000.00</span>
                         </div>
                         <button class="cta-button">Learn More</button>
                     </div>
                 </div>
 
-                <div class="opportunity-card" onclick="openModal('digital-presence')">
-                    <div class="card-image">
-                        Digital Presence
+                <div class="opportunity-card" onclick="openModal('december-holiday-party')">
+                    <div class="card-image" style="background-image: url('MV Pod pic.png');">
+                        <div class="card-image-overlay">
+                            December Holiday Party
+                        </div>
                     </div>
                     <div class="card-content">
-                        <h3 class="card-title">Year-Round Digital Sponsorship</h3>
-                        <p class="card-description">Maintain visibility through our website, newsletters, social media channels, and digital communications throughout the year.</p>
+                        <h3 class="card-title">December Holiday Party Sponsor</h3>
+                        <p class="card-description">Annual holiday celebration bringing together agents, staff, and their families for a festive evening of networking and appreciation.</p>
+                        <div class="card-details">
+                            <span class="sponsorship-level premium">Premium</span>
+                            <span class="investment-range">From $1,000.00</span>
+                        </div>
+                        <button class="cta-button">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="opportunity-card" onclick="openModal('vendor-day')">
+                    <div class="card-image" style="background-image: url('MV Pod pic.png');">
+                        <div class="card-image-overlay">
+                            Vendor Day
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Vendor Day Sponsor</h3>
+                        <p class="card-description">Dedicated day for vendors to showcase services, products, and build relationships with our real estate professionals.</p>
+                        <div class="card-details">
+                            <span class="sponsorship-level gold">Gold</span>
+                            <span class="investment-range">From $1,000.00</span>
+                        </div>
+                        <button class="cta-button">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="opportunity-card" onclick="openModal('diamond-quarterly')">
+                    <div class="card-image" style="background-image: url('MV Pod pic.png');">
+                        <div class="card-image-overlay">
+                            Diamond Level - Quarterly
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Diamond Level - Quarterly Office Sponsor</h3>
+                        <p class="card-description">Premium quarterly sponsorship package with maximum visibility across all office activities and communications.</p>
+                        <div class="card-details">
+                            <span class="sponsorship-level premium">Diamond</span>
+                            <span class="investment-range">From $1,000.00</span>
+                        </div>
+                        <button class="cta-button">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="opportunity-card" onclick="openModal('gold-six-month')">
+                    <div class="card-image" style="background-image: url('MV Pod pic.png');">
+                        <div class="card-image-overlay">
+                            Gold Level - 6 Month
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Gold Level - 6 Month Office Sponsor</h3>
+                        <p class="card-description">Six-month office sponsorship providing consistent brand exposure and networking opportunities.</p>
+                        <div class="card-details">
+                            <span class="sponsorship-level gold">Gold</span>
+                            <span class="investment-range">Contact for pricing</span>
+                        </div>
+                        <button class="cta-button">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="opportunity-card" onclick="openModal('platinum-yearly')">
+                    <div class="card-image" style="background-image: url('MV Pod pic.png');">
+                        <div class="card-image-overlay">
+                            Platinum Level - Yearly
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Platinum Level - Yearly Office Sponsor</h3>
+                        <p class="card-description">Annual comprehensive sponsorship package with year-round visibility and exclusive partnership benefits.</p>
+                        <div class="card-details">
+                            <span class="sponsorship-level premium">Platinum</span>
+                            <span class="investment-range">From $1,000.00</span>
+                        </div>
+                        <button class="cta-button">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="opportunity-card" onclick="openModal('agent-spotlight')">
+                    <div class="card-image" style="background-image: url('MV Pod pic.png');">
+                        <div class="card-image-overlay">
+                            Agent Spotlight
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Agent Spotlight Sponsor</h3>
+                        <p class="card-description">Monthly feature highlighting top-performing agents and their achievements with sponsor recognition.</p>
                         <div class="card-details">
                             <span class="sponsorship-level bronze">Bronze</span>
-                            <span class="investment-range">$1K - $5K</span>
+                            <span class="investment-range">From $1,000.00</span>
                         </div>
                         <button class="cta-button">Learn More</button>
                     </div>
@@ -601,112 +687,168 @@
     </footer>
 
     <!-- Modals -->
-    <div id="annual-gala" class="modal">
+    <div id="mid-week-mastermind" class="modal">
         <div class="modal-content">
-            <button class="close-modal" onclick="closeModal('annual-gala')">&times;</button>
-            <h2>Annual Gala Evening</h2>
-            <p><strong>Date:</strong> Third Saturday in November</p>
-            <p><strong>Attendees:</strong> 300+ industry professionals</p>
-            <p><strong>Duration:</strong> 6:00 PM - 11:00 PM</p>
-            
-            <h3>Sponsorship Levels:</h3>
-            <ul>
-                <li><strong>Title Sponsor ($25,000):</strong> Exclusive naming rights, premium booth space, speaking opportunity, VIP table for 10</li>
-                <li><strong>Presenting Sponsor ($15,000):</strong> Logo on all materials, booth space, VIP table for 8</li>
-                <li><strong>Supporting Sponsor ($10,000):</strong> Logo recognition, table for 6, promotional materials</li>
-                <li><strong>Table Sponsor ($5,000):</strong> Table for 8, program recognition</li>
-            </ul>
+            <button class="close-modal" onclick="closeModal('mid-week-mastermind')">&times;</button>
+            <h2>Mid-Week Mastermind Sponsor</h2>
+            <p><strong>Schedule:</strong> Weekly sessions</p>
+            <p><strong>Attendees:</strong> Real estate agents and staff</p>
+            <p><strong>Format:</strong> Professional development and strategy sessions</p>
             
             <h3>Benefits Include:</h3>
             <ul>
-                <li>Brand exposure to 300+ attendees</li>
-                <li>Networking with C-level executives</li>
-                <li>Professional photography and social media coverage</li>
-                <li>Year-round recognition on our website</li>
+                <li>Logo recognition during presentations</li>
+                <li>Opportunity to present relevant services</li>
+                <li>Direct access to engaged agents</li>
+                <li>Brand visibility in session materials</li>
             </ul>
             
-            <button class="cta-button" onclick="contactUs('Annual Gala')">Get Sponsorship Package</button>
+            <button class="cta-button" onclick="contactUs('Mid-Week Mastermind Sponsor')">Get Sponsorship Package</button>
         </div>
     </div>
 
-    <div id="quarterly-workshop" class="modal">
+    <div id="monthly-sales-meeting" class="modal">
         <div class="modal-content">
-            <button class="close-modal" onclick="closeModal('quarterly-workshop')">&times;</button>
-            <h2>Professional Development Series</h2>
-            <p><strong>Schedule:</strong> Four workshops per year (March, June, September, December)</p>
-            <p><strong>Attendees:</strong> 75-100 professionals per session</p>
-            <p><strong>Format:</strong> Half-day workshops with networking lunch</p>
-            
-            <h3>Sponsorship Levels:</h3>
-            <ul>
-                <li><strong>Series Sponsor ($10,000):</strong> Exclusive annual sponsorship, speaking opportunities at all four events</li>
-                <li><strong>Individual Workshop ($2,500):</strong> Single workshop sponsorship with presentation opportunity</li>
-                <li><strong>Lunch Sponsor ($1,500):</strong> Networking lunch sponsorship with table display</li>
-            </ul>
+            <button class="close-modal" onclick="closeModal('monthly-sales-meeting')">&times;</button>
+            <h2>Monthly Sales Meeting Sponsor</h2>
+            <p><strong>Schedule:</strong> Monthly meetings</p>
+            <p><strong>Attendees:</strong> All office agents and staff</p>
+            <p><strong>Format:</strong> Sales updates, recognition, and networking</p>
             
             <h3>Benefits Include:</h3>
             <ul>
-                <li>Thought leadership positioning</li>
-                <li>Direct access to skill-focused professionals</li>
-                <li>Educational content co-creation opportunities</li>
-                <li>LinkedIn and social media promotion</li>
+                <li>Sponsor recognition during meeting</li>
+                <li>Opportunity to address the group</li>
+                <li>Display materials and promotional items</li>
+                <li>Regular touchpoint with entire office</li>
             </ul>
             
-            <button class="cta-button" onclick="contactUs('Professional Development Series')">Get Sponsorship Package</button>
+            <button class="cta-button" onclick="contactUs('Monthly Sales Meeting Sponsor')">Get Sponsorship Package</button>
         </div>
     </div>
 
-    <div id="networking-mixer" class="modal">
+    <div id="december-holiday-party" class="modal">
         <div class="modal-content">
-            <button class="close-modal" onclick="closeModal('networking-mixer')">&times;</button>
-            <h2>Monthly Networking Mixers</h2>
-            <p><strong>Schedule:</strong> Second Thursday of each month</p>
-            <p><strong>Attendees:</strong> 40-60 professionals per event</p>
-            <p><strong>Format:</strong> Casual 2-hour evening mixer with appetizers and drinks</p>
-            
-            <h3>Sponsorship Levels:</h3>
-            <ul>
-                <li><strong>Annual Mixer Sponsor ($2,000):</strong> 12-month exclusive sponsorship of all mixers</li>
-                <li><strong>Quarterly Sponsor ($600):</strong> Sponsor 3 consecutive mixers</li>
-                <li><strong>Individual Mixer ($250):</strong> Single event sponsorship</li>
-            </ul>
+            <button class="close-modal" onclick="closeModal('december-holiday-party')">&times;</button>
+            <h2>December Holiday Party Sponsor</h2>
+            <p><strong>Date:</strong> December (Annual)</p>
+            <p><strong>Attendees:</strong> Agents, staff, and families</p>
+            <p><strong>Format:</strong> Holiday celebration and networking event</p>
             
             <h3>Benefits Include:</h3>
             <ul>
-                <li>Regular face-time with attendees</li>
-                <li>Intimate networking environment</li>
+                <li>Prominent logo placement throughout venue</li>
+                <li>Recognition in event announcements</li>
+                <li>Opportunity to provide branded gifts</li>
+                <li>Networking with agents and their families</li>
+                <li>Year-end brand visibility</li>
+            </ul>
+            
+            <button class="cta-button" onclick="contactUs('December Holiday Party Sponsor')">Get Sponsorship Package</button>
+        </div>
+    </div>
+
+    <div id="vendor-day" class="modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal('vendor-day')">&times;</button>
+            <h2>Vendor Day Sponsor</h2>
+            <p><strong>Schedule:</strong> Quarterly or as scheduled</p>
+            <p><strong>Attendees:</strong> All office agents and staff</p>
+            <p><strong>Format:</strong> Vendor showcase and networking</p>
+            
+            <h3>Benefits Include:</h3>
+            <ul>
+                <li>Premium booth space</li>
+                <li>Extended presentation time</li>
+                <li>Logo recognition as event sponsor</li>
+                <li>Direct interaction with all agents</li>
+                <li>Lead generation opportunities</li>
+            </ul>
+            
+            <button class="cta-button" onclick="contactUs('Vendor Day Sponsor')">Get Sponsorship Package</button>
+        </div>
+    </div>
+
+    <div id="diamond-quarterly" class="modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal('diamond-quarterly')">&times;</button>
+            <h2>Diamond Level - Quarterly Office Sponsor</h2>
+            <p><strong>Duration:</strong> 3-month partnership</p>
+            <p><strong>Exposure:</strong> Maximum visibility across all office activities</p>
+            
+            <h3>Benefits Include:</h3>
+            <ul>
+                <li>Logo in all office communications</li>
+                <li>Priority placement in newsletters and emails</li>
+                <li>Exclusive quarterly presentation opportunities</li>
+                <li>Premium office signage</li>
+                <li>Recognition at all events during quarter</li>
+                <li>Direct agent contact privileges</li>
+            </ul>
+            
+            <button class="cta-button" onclick="contactUs('Diamond Level - Quarterly Office Sponsor')">Get Sponsorship Package</button>
+        </div>
+    </div>
+
+    <div id="gold-six-month" class="modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal('gold-six-month')">&times;</button>
+            <h2>Gold Level - 6 Month Office Sponsor</h2>
+            <p><strong>Duration:</strong> 6-month partnership</p>
+            <p><strong>Exposure:</strong> Consistent brand visibility</p>
+            
+            <h3>Benefits Include:</h3>
+            <ul>
+                <li>Logo placement in office materials</li>
+                <li>Monthly newsletter mentions</li>
+                <li>Event sponsorship opportunities</li>
+                <li>Office signage placement</li>
+                <li>Bi-annual presentation opportunities</li>
+            </ul>
+            
+            <button class="cta-button" onclick="contactUs('Gold Level - 6 Month Office Sponsor')">Get Sponsorship Package</button>
+        </div>
+    </div>
+
+    <div id="platinum-yearly" class="modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal('platinum-yearly')">&times;</button>
+            <h2>Platinum Level - Yearly Office Sponsor</h2>
+            <p><strong>Duration:</strong> 12-month comprehensive partnership</p>
+            <p><strong>Exposure:</strong> Year-round maximum visibility</p>
+            
+            <h3>Benefits Include:</h3>
+            <ul>
+                <li>Exclusive yearly sponsor recognition</li>
+                <li>Logo on all office materials and communications</li>
+                <li>Quarterly presentation opportunities</li>
+                <li>Premium office signage placement</li>
+                <li>Priority access to all events</li>
+                <li>Dedicated newsletter features</li>
+                <li>Annual appreciation recognition</li>
+            </ul>
+            
+            <button class="cta-button" onclick="contactUs('Platinum Level - Yearly Office Sponsor')">Get Sponsorship Package</button>
+        </div>
+    </div>
+
+    <div id="agent-spotlight" class="modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal('agent-spotlight')">&times;</button>
+            <h2>Agent Spotlight Sponsor</h2>
+            <p><strong>Schedule:</strong> Monthly features</p>
+            <p><strong>Reach:</strong> Office-wide and social media exposure</p>
+            
+            <h3>Benefits Include:</h3>
+            <ul>
+                <li>Co-branding with featured agent content</li>
+                <li>Logo placement on spotlight materials</li>
+                <li>Social media exposure</li>
+                <li>Association with top-performing agents</li>
                 <li>Monthly brand visibility</li>
-                <li>Opportunity to host at your location</li>
             </ul>
             
-            <button class="cta-button" onclick="contactUs('Monthly Networking Mixers')">Get Sponsorship Package</button>
-        </div>
-    </div>
-
-    <div id="digital-presence" class="modal">
-        <div class="modal-content">
-            <button class="close-modal" onclick="closeModal('digital-presence')">&times;</button>
-            <h2>Year-Round Digital Sponsorship</h2>
-            <p><strong>Duration:</strong> 12-month partnership</p>
-            <p><strong>Reach:</strong> 2,000+ newsletter subscribers, 5,000+ website visitors monthly</p>
-            <p><strong>Channels:</strong> Website, email newsletters, social media, blog content</p>
-            
-            <h3>Sponsorship Levels:</h3>
-            <ul>
-                <li><strong>Premium Digital ($5,000):</strong> Homepage logo, dedicated newsletter feature, social media series</li>
-                <li><strong>Standard Digital ($3,000):</strong> Website sidebar placement, monthly newsletter mention</li>
-                <li><strong>Basic Digital ($1,500):</strong> Website footer, quarterly newsletter inclusion</li>
-            </ul>
-            
-            <h3>Benefits Include:</h3>
-            <ul>
-                <li>Consistent brand visibility year-round</li>
-                <li>SEO benefits through website placement</li>
-                <li>Content collaboration opportunities</li>
-                <li>Analytics reporting on reach and engagement</li>
-            </ul>
-            
-            <button class="cta-button" onclick="contactUs('Digital Presence')">Get Sponsorship Package</button>
+            <button class="cta-button" onclick="contactUs('Agent Spotlight Sponsor')">Get Sponsorship Package</button>
         </div>
     </div>
 
